@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Roboto+Slab:wght@200&family=Roboto:wght@500;900&display=swap');
+
+/* body {
+    overflow-x: hidden;
+    display: flex;
+} */
+
+
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(30, 30, 30);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    /* z-index: -1; */
+    position: absolute;
+    /* overflow-x: hidden; */
+    overflow-y: hidden;
+}
+
+.main {
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+.card {
+    background-color: rgba(55, 55, 55, 0.5);
+    width: 15rem;
+    height: 20rem;
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    justify-content: center;
+    border: 2px solid rgba(55, 55, 55, 0.8);
+    border-radius: 10px;
+}
+
+.image {
+    padding: 2rem;
+    text-align: center;
+}
+
+.name {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: x-large;
+}
+
+.professin {
+    text-align: center;
+    padding-top: 1.2rem;
+    font-size: larger;
+}
+
+.btn {
+    padding-top: 1.2rem;
+    width: 220px;
+    /* display: flex;
+    justify-content: space-around; */
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+.btn button {
+    width: 6rem;
+    height: 2rem;
+    background-color: rgba(55, 55, 55, 0.5);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+.btn button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.1ms ease-in;
+}
+
+
+.btn button {
+    cursor: pointer;
+}
+
+
+
+
+.circle1 {
+    height: 10rem;
+    width: 10rem;
+    background-color: rgba(255, 155, 155, 0.925);
+    border-radius: 50%;
+    position: relative;
+    top: -10rem;
+    left: -2rem;
+    margin: 2rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 9px 4px rgba(255, 155, 155, 0.925);
+    animation: glow 1.5s linear infinite alternate;
+}
+
+
+@keyframes glow {
+    to {
+        box-shadow: 0px 0px 30px 20px rgba(255, 155, 155, 0.925);
+    }
+}
+
+
+.circle2 {
+    height: 10rem;
+    position: relative;
+    top: 10rem;
+    left: 3.5rem;
+    z-index: 1;
+    width: 10rem;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+    margin: 3rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 4px rebeccapurple;
+    animation: glow2 1.5s linear infinite alternate;
+}
+
+@keyframes glow2 {
+    to {
+        box-shadow: 0px 0px 30px 20px rebeccapurple;
+    }
+}
+
+.modal {
+    position: relative;
+    z-index: 1;
+    /* border: 2px solid red; */
+    /* color: white; */
+    color: white;
+    top: -100vh;
+    width: 100vw;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(55, 55, 55, 0.5);
+    align-items: center;
+    /* scale: 0.3; */
+    visibility: hidden;
+    /* animation: glow 1.5s linear infinite alternate; */
+    /* transition: all; */
+
+
+}
+
+
+
+
+.modaal {
+    visibility: visible;
+}
+
+.Share {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+    padding: 5px;
+}
+
+
+.card1 {
+    width: 20rem;
+    border: 2px solid burlywood;
+    background-color: rgba(10, 10, 10, 0.8);
+    border-radius: 10px;
+    transition: transform 0.3s linear;
+    animation: slow 1s linear 1 alternate;
+}
+
+
+@keyframes slow {
+    from {
+        scale: 0.5;
+
+        to {
+            scale: 1;
+        }
+    }
+}
+
+
+hr {
+    /* height: 2px; */
+    background-color: auto;
+}
+
+.scocialmedia {
+    margin-top: 1rem;
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+
+.modulemain {
+    margin-top: 0.8rem;
+}
+
+.facebook {
+    padding: 10px;
+    border: 2px solid #1877F2;
+    border-radius: 50%;
+
+}
+
+.twitter {
+    padding: 10px;
+    border: 2px solid #1DA1F2;
+    border-radius: 50%;
+
+}
+
+.instagram {
+    padding: 10px;
+    border: 2px solid #C13584;
+
+    border-radius: 50%;
+}
+
+.whatsapp {
+    padding: 10px;
+    border: 2px solid #25D336;
+    border-radius: 50%;
+
+}
+
+.teligram {
+    padding: 10px;
+    border: 2px solid #1877F2;
+    border-radius: 50%;
+
+}
+
+
+.icons:hover {
+    background-color: white;
+    padding: 10px;
+}
